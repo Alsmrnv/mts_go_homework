@@ -1,4 +1,4 @@
-package StorageSlice
+package storageslice
 
 import "LibraryProject/book"
 

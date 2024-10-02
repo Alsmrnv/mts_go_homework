@@ -1,4 +1,4 @@
-package StorageMap
+package storagemap
 
 import "LibraryProject/book"
 

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"LibraryProject/StorageSlice"
 	"LibraryProject/book"
 	"LibraryProject/library"
+	"LibraryProject/storageslice"
 	"fmt"
 )
 
@@ -56,7 +56,7 @@ func main() {
 		fmt.Printf("Book: '%s'\nAuthor: %s\nYear: %d\n\n", book3.Title, book3.Author, book3.PublicationYear)
 	}
 
-	var newStorage StorageSlice.BookSlice
+	var newStorage storageslice.BookSlice
 	lib.ChangeStorage(&newStorage)
 
 	fmt.Println("---------------------------\nAfter changing storage:\n---------------------------\n")

@@ -1,9 +1,9 @@
 package library
 
 import (
-	"LibraryProject/StorageMap"
 	"LibraryProject/book"
 	"LibraryProject/storage"
+	"LibraryProject/storagemap"
 )
 
 type Library struct {
@@ -12,7 +12,7 @@ type Library struct {
 }
 
 func NewLibrary() *Library {
-	return &Library{StorageMap.NewBookMap(), book.HashBook}
+	return &Library{storagemap.NewBookMap(), book.HashBook}
 }
 
 func (lib *Library) GetBook(title string) (book.Book, bool) {
